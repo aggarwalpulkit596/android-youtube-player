@@ -114,6 +114,8 @@ internal class WebViewYouTubePlayer constructor(context: Context, attrs: Attribu
                 return result ?: Bitmap.createBitmap(1, 1, Bitmap.Config.RGB_565)
             }
         }
+        val desktopAgent = "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0"
+        settings.userAgentString = desktopAgent
     }
 
     override fun onWindowVisibilityChanged(visibility: Int) {
